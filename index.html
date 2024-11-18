@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="Logo" class="logo">
+            <div class="score-board">
+                <div class="score">
+                    <div class="score-title" >YOU</div>
+                    <div class="score-number" id="user-score">0</div>
+                </div>
+                <div class="score">
+                    <div class="score-title">Computer</div>
+                    <div class="score-number" id="computer-score">0</div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img class="images" src="images/fist.png" alt="">
+        </div>
+        <div class="choice" id="paper">
+            <img class="images" src="images/hand-paper.png" alt="">
+        </div>
+        <div class="choice" id="scissor">
+            <img class="images" src="images/scissors.png" alt="">
+        </div>
+    </div>
+
+    <div class="computer-choice">
+        <img src="images/default.png" >
+        <p id="computer-msg">Waiting for your move</p>
+    </div>
+
+    <div class="message">
+        <p id="msg">Play your move</p>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
